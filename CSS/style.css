@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta");
+
+body {
+  font-family: "Mukta", sans-serif;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 100px 0 50px 0;
+  color: rgba(92, 88, 88, 0.746);
+  flex-wrap: wrap;
+}
+
+.budget-feedback,
+.expense-feedback {
+  display: none;
+  color: rgba(92, 88, 88, 0.746);
+  background-color: rgba(255, 98, 98, 0.712);
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.hideItem {
+  display: none;
+}
+
+.showItem {
+  display: block;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(89, 212, 89);
+}
+.app-img-title {
+  display: flex;
+  align-items: center;
+}
+
+.budget-container {
+  border: solid 2px rgba(19, 126, 19, 0.705);
+  width: 300px;
+  height: auto;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.budget-container label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(92, 88, 88, 0.746);
+  margin: 15px 0 10px 10px;
+}
+
+.budget-container input {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 0 10px 10px;
+  border: 2px solid rgba(1, 231, 20, 0.301);
+  border-radius: 3px;
+  height: 30px;
+  width: auto;
+}
+.budget-container input:hover {
+  outline: none !important;
+  border: 2px solid rgba(8, 119, 17, 0.924);
+  box-shadow: 0 0px 10px;
+  color: rgb(89, 212, 89);
+}
+
+.budget-container input:focus {
+  outline: none !important;
+  border: 2px solid rgba(8, 119, 17, 0.924);
+  box-shadow: 0 0px 10px;
+  color: rgb(89, 212, 89);
+}
+.budget-container button {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0 10px 10px;
+  border: 2px solid rgba(63, 207, 63, 0.705);
+  padding: 10px;
+  background-color: white;
+  color: rgba(6, 146, 6, 0.705);
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.budget-container button:focus {
+  outline: none !important;
+  border: 2px solid rgba(8, 119, 17, 0.924);
+  box-shadow: 0 0px 10px;
+  color: rgb(89, 212, 89);
+}
+.budget-container button:hover {
+  outline: none !important;
+  background-color: rgba(63, 207, 63, 0.305);
+  border: 2px solid rgba(8, 119, 17, 0.924);
+  box-shadow: 0 0px 10px;
+  color: rgb(89, 212, 89);
+}
+
+.budget-sidebox {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.budget-sidebox h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.budget-sidebox-budget-title {
+  font-size: 1.5em;
+  color: rgb(89, 212, 89);
+}
+.budget-sidebox-expense-title {
+  font-size: 1.5em;
+  color: rgba(255, 1, 1, 0.993);
+}
+
+.showBlack {
+  font-size: 1.5em;
+  color: rgba(92, 88, 88, 0.746);
+}
+
+.showPositive {
+  font-size: 1.5em;
+  color: rgb(89, 212, 89);
+}
+.showNegative {
+  font-size: 1.5em;
+  color: rgba(255, 1, 1, 0.993);
+}
+
+.expense-container {
+  border: solid 2px rgba(126, 19, 19, 0.705);
+  width: 300px;
+  height: auto;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-container label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(92, 88, 88, 0.746);
+  margin: 15px 0 10px 10px;
+}
+
+.expense-container input {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 0 10px 10px;
+  border: 2px solid rgba(200, 4, 4, 0.87);
+  border-radius: 3px;
+  height: 30px;
+  width: auto;
+}
+.expense-container button {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0 10px 10px;
+  border: 2px solid rgba(201, 16, 16, 0.883);
+  padding: 10px;
+  background-color: white;
+  color: rgba(201, 16, 16, 0.883);
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.expenses-sidebox {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.expenses-sidebox h5 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.expenses-list-info {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.expense-item {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.expense {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: rgba(255, 1, 1, 0.993);
+}
+
+.edit-icon,
+.delete-icon {
+  text-decoration: none;
+}
+
+/* ADD MEDIA QUERIES */

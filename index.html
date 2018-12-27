@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Budgetly</title>
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/main.js"></script>
+  </head>
+  <body>
+    <div class="app-title">
+      <h1 class="app-img-title">
+        <img
+          src="https://img.icons8.com/color/48/000000/money-box.png"
+        />Budgetly
+      </h1>
+    </div>
+    <div class="section-container">
+      <div class="budget-container">
+        <div class="budget-feedback">budget feedback</div>
+        <form id="budget-form">
+          <label for="budget-input">Please Enter Your Budget</label><br />
+          <input id="budget-input" type="number" /><br />
+          <button id="budget-submit" type="submit">Calculate</button>
+        </form>
+      </div>
+      <div class="budget-sidebox">
+        <div id="budget-sidebox-money">
+          <h1>BUDGET</h1>
+          <img src="https://img.icons8.com/color/96/000000/money-bag.png" />
+          <h2 class="budget-sidebox-budget-title">
+            $<span id="budget-amount">0</span>
+          </h2>
+        </div>
+        <div id="budget-sidebox-expenses">
+          <h1>EXPENSES</h1>
+          <img src="https://img.icons8.com/color/96/000000/refund.png" />
+          <h2 class="budget-sidebox-expense-title">
+            $<span id="expense-amount">0</span>
+          </h2>
+        </div>
+        <div>
+          <h1>BALANCE</h1>
+          <img src="https://img.icons8.com/color/96/000000/money-box.png" />
+          <h2 id="budget-sidebox-balance" class="showBlack">
+            $<span id="balance-amount">0</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="expense-container">
+        <div class="expense-feedback">Expense feedback</div>
+        <form id="expense-form">
+          <label for="expense-name">Please Enter Your Expense</label><br />
+          <input id="expense-name" type="text" /><br />
+          <label for="expense-input">Please Enter Expense Amount</label><br />
+          <input id="expense-input" type="number" /><br />
+          <button type="submit">Add Expense</button>
+        </form>
+      </div>
+      <div id="expenses-list" class="expenses-sidebox">
+        <div class="expenses-list-info">
+          <h5 id="expenses-sidebox-title">Expense Title</h5>
+          <h5 id="expenses-sidebox-value">Expense Value</h5>
+          <h5 id="list-item">Edit/Delete</h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
