@@ -181,6 +181,33 @@ body {
   font-weight: 600;
   border-radius: 3px;
 }
+.expense-container input:hover {
+  outline: none !important;
+  border: 2px solid rgba(243, 32, 17, 0.924);
+  box-shadow: 0 0px 10px;
+  color: rgb(155, 6, 6);
+}
+
+.expense-container input:focus {
+  outline: none !important;
+  border: 2px solid rgba(201, 16, 16, 0.883);
+  box-shadow: 0 0px 10px;
+  color: rgba(255, 1, 1, 0.993);
+}
+
+.expense-container button:focus {
+  outline: none !important;
+  border: 2px solid rgba(201, 16, 16, 0.883);
+  box-shadow: 0 0px 10px;
+  color: rgba(255, 1, 1, 0.993);
+}
+.expense-container button:hover {
+  outline: none !important;
+  background-color: rgba(211, 71, 71, 0.5);
+  border: 2px solid rgba(201, 16, 16, 0.883);
+  box-shadow: 0 0px 10px;
+  color: rgba(255, 1, 1, 0.993);
+}
 
 .expenses-sidebox {
   width: 50%;
