@@ -259,3 +259,29 @@ body {
 }
 
 /* ADD MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .expenses-sidebox h5 {
+    font-size: .75em;
+    font-weight: bold;
+  }
+  .expense {
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgba(255, 1, 1, 0.993);
+  }
+  .edit-icon,
+.delete-icon {
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+}
+}
